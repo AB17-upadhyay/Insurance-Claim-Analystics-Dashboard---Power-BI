@@ -221,25 +221,8 @@ Because ClaimAmount is modeled rather than observed, the absolute dollar values 
 
 ---
 
-## 9. Interview Talking Points
 
-For portfolio interviews, this project provides answers to common questions:
-
-**Q: Tell me about a time you caught a bug in your own analysis.**
-*"In my claim amount modeling, I had a multiplicative formula where risk profile zeroed out actual claim amounts for customers with Risk Profile = 0 — about 21% of the dataset. I redesigned the formula as a baseline-plus-loading structure, which also required recalibrating the coefficient to produce a realistic portfolio loss ratio."*
-
-**Q: How do you decide between a measure and a calculated column?**
-*"If the formula needs to aggregate across rows or respond to filters, it's a measure. If it's a per-row attribute used in a table, slicer, or visual legend, it's a calculated column. In this project, Loss Ratio per Customer is a column because it appears per row in Page 3, but Loss Ratio is a measure because it aggregates across whatever filter is applied."*
-
-**Q: How did you handle the situation where your data didn't show the pattern you expected?**
-*"The PolicyType × AgeBand matrix came out nearly uniform — 69–78% across all combinations. Rather than force a finding, I flagged this as an insight in itself: our pre-built segmentation doesn't differentiate risk. The real variation was at the individual customer level, which directed the recommendation strategy toward per-customer renewal reviews instead of segment-wide repricing."*
-
-**Q: What would you do differently with more time?**
-*"Three things: (1) retention-adjusted uplift projections, (2) a fraud detection layer on the Critical Loss tier using claim frequency and credit score anomalies, (3) reserve development modeling for a proper combined ratio."*
-
----
-
-## 10. Files in This Repository
+## 9. Files in This Repository
 
 ```
 /
@@ -248,10 +231,5 @@ For portfolio interviews, this project provides answers to common questions:
 ├── InsuranceClaimDashboard.pbix      (the Power BI report)
 ├── /data/
 │   └── data_synthetic.csv            (source dataset)
-└── /screenshots/
-    ├── page1_executive_summary.png
-    ├── page2_loss_ratio_deep_dive.png
-    ├── page3_customer_risk.png
-    ├── page4_claims_analysis.png
-    └── page5_recommendations.png
+
 ```
