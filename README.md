@@ -432,24 +432,11 @@ Honest limitations for future enhancement:
 **Alternate view:** A published version is available on Power BI Service — see the Service link in the repo's About section.
 
 ---
-
-## Screenshots
-
-Add the following screenshots to the `/screenshots` folder and reference them here:
-
-- `page1_executive_summary.png`
-- `page2_loss_ratio_deep_dive.png`
-- `page3_customer_risk.png`
-- `page4_claims_analysis.png`
-- `page5_recommendations.png`
-
----
-
 ## Contact
 
 **Author:** Adarsh Upadhyay
 **Role:** Data Analyst
-**Email:** *[your email]*
-**LinkedIn:** *[your LinkedIn URL]*
+**Email:** *upahdhyay17ab@gmail.com*
+**LinkedIn:** *https://www.linkedin.com/in/adarsh-upadhyay-10a579104/*
 
 This project is part of a portfolio demonstrating end-to-end Power BI development, DAX modeling, and stakeholder-facing analytics storytelling.
